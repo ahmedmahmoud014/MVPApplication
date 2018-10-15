@@ -27,4 +27,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     compile 'com.android.support:recyclerview-v7:26.1.0'
 
+    // silder image
+    compile 'com.matthew-tamlin:sliding-intro-screen:3.2.0'
+
 }

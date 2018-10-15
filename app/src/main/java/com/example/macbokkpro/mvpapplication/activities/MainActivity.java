@@ -1,10 +1,14 @@
-package com.example.macbokkpro.mvpapplication;
+package com.example.macbokkpro.mvpapplication.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements Contract.ViewMVP{
+import com.example.macbokkpro.mvpapplication.Contract;
+import com.example.macbokkpro.mvpapplication.PresnterClass;
+import com.example.macbokkpro.mvpapplication.R;
+
+public class MainActivity extends AppCompatActivity implements Contract.ViewMVP {
     TextView   textView;
 
     @Override
@@ -15,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements Contract.ViewMVP{
 
 
         // call  presenter
-        PresnterClass  presnterClass = new PresnterClass(this);
+        PresnterClass presnterClass = new PresnterClass(this);
         presnterClass.connectViewWithModel();
 
 
